@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&amp;subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
+  <link href="bundle.css" rel="stylesheet">
+  <title>Оплата продукта. Викиум</title>
+  <meta name="author" content="Ekaterina Nikitina katinikitina05@mail.ru">
+  <meta name="description" content="content">
+  <meta name="keyword" content="content">
+</head>
+<body>
+  <div class="page-wrapper">
+    <header class="page-header">
+      <a class="page-header__logo" href="https://wikium.ru/">
+        <img src="img/logo_wikium.svg" alt="Логотип компании Викиум. Тренажеры для мозга" title="Логотип компании Викиум. Тренажеры для мозга" width="" height="" >
+      </a>
+    </header>
+    <main>
+        <h1 class="page-title visually-hidden">Страница оплаты 3-х дневного доступа тренажеров для мозга от Викиум</h1>
+
+      <div class="payment-slogan">
+        <p class="payment-slogan__header">Три дня для твоего мозга</p>
+        <p class="payment-slogan__text">Это стоит символические 60 рублей, для того, чтобы была мотивация пройти этот путь до конца.</p>
+      </div>
+
+      <section class="payment-wrapper">
+        <form class="payment-form__row" action="">
+          <div class="payment-form__pay-sistem">
+            <img src="img/cards.png" alt="Виды платежных систем доступных для оплаты: MasterCard, МИР, Visa">
+          </div>
+          <fieldset class="payment-form__front-side-card">
+            <div class="payment-form__row">
+              <label for="">номер карты</label>
+              <input type="number">
+            </div>
+            <div class="payment-form__row">
+              <label for="">имя владельца</label>
+              <input type="text">
+            </div>
+            <div class="payment-form__row">
+              <label for="">срок действия</label>
+              <input type="number">
+            </div>
+          </fieldset>
+          <fieldset class="payment-form__back-side-card">
+            <div class="payment-form__row">
+              <label for="">cvc</label>
+              <input type="number">
+            </div>
+            <p class="payment-form__description">
+              Три цифры с оборотной стороны
+            </p>
+          </fieldset>
+
+          <div class="payment-form__secure">
+            <p class="payment-form__secure-text">
+              Мы не храним ваши данные, а сразу передаём их по зашифрованному каналу платёжной системы.
+            </p>
+          </div>
+
+          <button type="submit">оплатить 60 ₽</button>
+
+        </form>
+      </section>
+
+    </main>
+  </div>
+</body>
+</html>
