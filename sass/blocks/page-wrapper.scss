@@ -1,6 +1,9 @@
 .page-wrapper {
   width: 100%;
   min-height: 100vh;
+  background-attachment: fixed;
+  background-color: #3abbba;
+  background-position: 0 0;
   background-image: linear-gradient(160deg, $blue-with-a-hint-of-purple, $tealish);
 
   @media (min-width: $tablet-width) {

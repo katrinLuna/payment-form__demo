@@ -292,6 +292,9 @@ input[type="radio"].visually-hidden {
 .page-wrapper {
   width: 100%;
   min-height: 100vh;
+  background-attachment: fixed;
+  background-color: #3abbba;
+  background-position: 0 0;
   background-image: linear-gradient(160deg, #6039aa, #32d6bd); }
   @media (min-width: 768px) {
     .page-wrapper {
@@ -334,12 +337,19 @@ input[type="radio"].visually-hidden {
   @media (min-width: 768px) {
     .main-wrapper {
       min-width: 768px;
-      margin: 0 auto;
+      margin-top: 56px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 0;
       padding-left: 24px;
       padding-right: 24px; } }
   @media (min-width: 1130px) {
     .main-wrapper {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: nowrap;
       width: 1130px;
+      margin-top: 76px;
       padding-left: 15px;
       padding-right: 15px; } }
 
@@ -360,4 +370,27 @@ input[type="radio"].visually-hidden {
     color: #ffffff; }
   .payment-slogan__amount {
     font-weight: 700; }
+  @media (min-width: 768px) {
+    .payment-slogan {
+      width: 85%; }
+      .payment-slogan__header {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 48px; }
+      .payment-slogan__text {
+        margin-top: 40px;
+        margin-bottom: 0;
+        font-size: 21px; } }
+  @media (min-width: 1130px) {
+    .payment-slogan {
+      flex-basis: 438px;
+      width: 438px;
+      padding-top: 29px; }
+      .payment-slogan__header {
+        margin-top: 0;
+        margin-bottom: 0; }
+      .payment-slogan__text {
+        width: 400px;
+        margin-top: 40px;
+        margin-bottom: 0; } }
 

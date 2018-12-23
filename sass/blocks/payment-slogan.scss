@@ -17,4 +17,39 @@
   &__amount {
     font-weight: $font-bold;
   }
+
+  @media (min-width: $tablet-width) {
+    width: 85%;
+
+    &__header {
+      margin-top: 0;
+      margin-bottom: 0;
+      font-size: 48px;
+    }
+
+    &__text {
+      margin-top: 40px;
+      margin-bottom: 0;
+      font-size: 21px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-basis: 438px;
+    width: 438px;
+    padding-top: 29px;
+
+    &__header {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    &__text {
+      width: 400px;
+      margin-top: 40px;
+      margin-bottom: 0;
+    }
+  }
 }
+
+

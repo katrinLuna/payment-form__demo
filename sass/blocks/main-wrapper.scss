@@ -7,13 +7,20 @@
 
   @media (min-width: $tablet-width) {
     min-width: $tablet-width;
-    margin: 0 auto;
+    margin-top: 56px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom: 0;
     padding-left: $tablet-width-h-padding;
     padding-right: $tablet-width-h-padding;
   }
 
   @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
     width: $desktop-width;
+    margin-top: 76px;
     padding-left: $desktop-width-h-padding;
     padding-right: $desktop-width-h-padding;
   }

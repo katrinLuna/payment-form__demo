@@ -23,7 +23,7 @@
         <h1 class="page-title visually-hidden">Страница оплаты 3-х дневного доступа тренажеров для мозга от Викиум</h1>
 
       <div class="payment-slogan">
-        <p class="payment-slogan__header">Три дня для твоего мозга</p>
+        <p class="payment-slogan__header">Три дня для твоего мозга.</p>
         <p class="payment-slogan__text">Это стоит символические <span class=" payment-slogan__amount">60 рублей</span>, для того, чтобы была мотивация пройти этот путь до конца.</p>
       </div>
 
@@ -34,7 +34,8 @@
           <div class="payment-form__pay-sistem-img">
             <img src="img/cards.png" alt="Виды платежных систем доступных для оплаты: MasterCard, МИР, Visa" title="Виды платежных систем доступных для оплаты: MasterCard, МИР, Visa" width="154" height="26">
           </div>
-          <fieldset class="payment-form__front-side-card">
+
+          <fieldset class="payment-form__card payment-form__card--front-side">
             <div class="payment-form__row">
               <label class="payment-form__label" for="cardNumber">номер карты</label>
               <input class="payment-form__input" id="cardNumber" name="cardNumber" type="number" placeholder="" required>
@@ -48,7 +49,8 @@
               <input class="payment-form__input" id="cardPeriod" name="cardPeriod" type="date" placeholder="" required>
             </div>
           </fieldset>
-          <fieldset class="payment-form__back-side-card">
+
+          <fieldset class="payment-form__card payment-form__card--back-side">
             <div class="payment-form__row">
               <label class="payment-form__label" for="cardCvc">cvc</label>
               <input class="payment-form__input" id="cardCvc" name="cardCvc" type="text" maxlength="3" pattern="([0-9]{3})" placeholder="" required>
