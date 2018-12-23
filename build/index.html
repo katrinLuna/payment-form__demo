@@ -15,40 +15,40 @@
   <div class="page-wrapper">
     <header class="page-header">
       <a class="page-header__logo" href="https://wikium.ru/">
-        <img src="img/logo_wikium.svg" alt="Логотип компании Викиум. Тренажеры для мозга" title="Логотип компании Викиум. Тренажеры для мозга" width="" height="" >
+        <img src="img/logo_wikium.svg" alt="Логотип компании Викиум. Тренажеры для мозга" title="Логотип компании Викиум. Тренажеры для мозга" width="99" height="30" >
       </a>
     </header>
-    <main>
+    <main class="main-wrapper">
         <h1 class="page-title visually-hidden">Страница оплаты 3-х дневного доступа тренажеров для мозга от Викиум</h1>
 
       <div class="payment-slogan">
         <p class="payment-slogan__header">Три дня для твоего мозга</p>
-        <p class="payment-slogan__text">Это стоит символические 60 рублей, для того, чтобы была мотивация пройти этот путь до конца.</p>
+        <p class="payment-slogan__text">Это стоит символические <span class=" payment-slogan__amount">60 рублей</span>, для того, чтобы была мотивация пройти этот путь до конца.</p>
       </div>
 
       <section class="payment-wrapper">
-        <form class="payment-form__row" action="">
-          <div class="payment-form__pay-sistem">
-            <img src="img/cards.png" alt="Виды платежных систем доступных для оплаты: MasterCard, МИР, Visa">
+        <form class="payment-form" action="https://wikium.server" method="post">
+          <div class="payment-form__pay-sistem-img">
+            <img src="img/cards.png" alt="Виды платежных систем доступных для оплаты: MasterCard, МИР, Visa" title="Виды платежных систем доступных для оплаты: MasterCard, МИР, Visa" width="154" height="26">
           </div>
           <fieldset class="payment-form__front-side-card">
             <div class="payment-form__row">
-              <label for="">номер карты</label>
-              <input type="number">
+              <label class="payment-form__label" for="cardNumber">номер карты</label>
+              <input class="payment-form__input" id="cardNumber" name="cardNumber" type="number" placeholder="" required>
             </div>
             <div class="payment-form__row">
-              <label for="">имя владельца</label>
-              <input type="text">
+              <label class="payment-form__label" for="cardHolder">имя владельца</label>
+              <input class="payment-form__input" id="cardHolder" name="cardHolder" type="text" pattern="^[a-zA-Z]+${2}" placeholder="" required>
             </div>
             <div class="payment-form__row">
-              <label for="">срок действия</label>
-              <input type="number">
+              <label class="payment-form__label" for="cardPeriod">срок действия</label>
+              <input class="payment-form__input" id="cardPeriod" name="cardPeriod" type="date" placeholder="" required>
             </div>
           </fieldset>
           <fieldset class="payment-form__back-side-card">
             <div class="payment-form__row">
-              <label for="">cvc</label>
-              <input type="number">
+              <label class="payment-form__label" for="cardCvc">cvc</label>
+              <input class="payment-form__input" id="cardCvc" name="cardCvc" type="text" maxlength="3" pattern="([0-9]{3})" placeholder="" required>
             </div>
             <p class="payment-form__description">
               Три цифры с оборотной стороны
@@ -61,11 +61,15 @@
             </p>
           </div>
 
-          <button type="submit">оплатить 60 ₽</button>
+          <button class="payment-form__submit-button" type="submit">оплатить 60 ₽</button>
 
         </form>
-      </section>
 
+      <div class="payment-all-system">
+        <a href="https://wikium.ru/">Все способы оплаты</a>
+      </div>
+
+      </section>
     </main>
   </div>
 </body>
