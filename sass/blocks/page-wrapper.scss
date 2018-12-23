@@ -1,0 +1,13 @@
+.page-wrapper {
+  width: 100%;
+  min-height: 100vh;
+  background-image: linear-gradient(160deg, $blue-with-a-hint-of-purple, $tealish);
+
+  @media (min-width: $tablet-width) {
+    background-image: linear-gradient(143deg, $blue-with-a-hint-of-purple, $tealish);
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: linear-gradient(118deg, $blue-with-a-hint-of-purple, $tealish);
+  }
+}

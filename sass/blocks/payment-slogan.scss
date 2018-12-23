@@ -1,0 +1,20 @@
+.payment-slogan {
+  width: 100%;
+
+  &__header {
+    margin-top: 0;
+    margin-bottom: 0;
+    @include set-font (24px, $font-extra-bold, $white);
+  }
+
+  &__text {
+    margin-top: 29px;
+    margin-bottom: 0;
+    opacity: 0.6;
+    @include set-font (14px, $font-normal, $white);
+  }
+
+  &__amount {
+    font-weight: $font-bold;
+  }
+}

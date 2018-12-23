@@ -1,0 +1,21 @@
+.main-wrapper {
+  min-width: $mobile-width;
+  margin-top: 30px;
+  padding-left: $mobile-width-h-padding;
+  padding-right: $mobile-width-h-padding;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    min-width: $tablet-width;
+    margin: 0 auto;
+    padding-left: $tablet-width-h-padding;
+    padding-right: $tablet-width-h-padding;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
+    padding-left: $desktop-width-h-padding;
+    padding-right: $desktop-width-h-padding;
+  }
+
+}
