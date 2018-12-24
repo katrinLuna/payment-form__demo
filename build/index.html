@@ -34,39 +34,39 @@
 
           <fieldset class="payment-form-card payment-form-card--front-side">
             <div class="payment-form-card__pay-sistem-img">
-              <img src="img/cards.png" alt="Виды платежных систем доступных для оплаты: MasterCard, МИР, Visa" title="Виды платежных систем доступных для оплаты: MasterCard, МИР, Visa" width="154" height="26">
+              <img src="img/cards.png" alt="Виды платежных систем доступных для оплаты: MasterCard, Maestro, Visa" title="Виды платежных систем доступных для оплаты: MasterCard, Maestro, Visa" width="154" height="26">
             </div>
 
             <div class="payment-form-card__fields-wrapper">
               <div class="payment-form-card__row payment-form-card__row--full-width">
                 <label class="payment-form-card__label" for="cardNumber">номер карты</label>
-                <input class="payment-form-card__input" id="cardNumber" name="cardNumber" type="text" placeholder="1234 5678 9012 3456789" maxlength="22" required>
+                <input class="payment-form-card__input" id="cardNumber" name="cardNumber" type="text" placeholder="1234 5678 9012 3456" maxlength="22" autocomplete="off" autocorrect="off" required>
               </div>
 
               <div class="payment-form-card__row payment-form-card__row--two-thirds">
                 <label class="payment-form-card__label" for="cardHolder">имя владельца</label>
-                <input class="payment-form-card__input payment-form-card__input--card-holder" id="cardHolder" name="cardHolder" type="text" pattern="^[a-zA-Z]+${2}" placeholder="IVAN IVANOV" required>
+                <input class="payment-form-card__input payment-form-card__input--card-holder" id="cardHolder" name="cardHolder" type="text" pattern="^[a-zA-Z]+${2}" placeholder="IVAN IVANOV" autocomplete="off" autocorrect="off" required>
               </div>
 
               <div class="payment-form-card__row payment-form-card__row--one-third">
                 <label class="payment-form-card__label" for="expMonth">срок действия</label>
                 <div class="payment-form-card__input payment-form-card__input--exp-date">
                   <input class="payment-form-card__input-exp-date" id="expMonth" name="expMonth" type="text" placeholder="12" required autocomplete="off" autocorrect="off">
-                  <input class="payment-form-card__input-exp-date" id="expYear" name="expYear" type="text" placeholder="18" required autocomplete="off" autocorrect="off">
+                  <input class="payment-form-card__input-exp-date" id="expYear" name="expYear" type="text" placeholder="18"  autocomplete="off" autocorrect="off" required>
                 </div>
               </div>
             </div>
           </fieldset>
 
           <fieldset class="payment-form-card payment-form-card--back-side">
-            <div class="payment-form-card__fields-wrapper">
+            <div class="payment-form-card__fields-wrapper payment-form-card__fields-wrapper--back-side">
               <div class="payment-form-card__row payment-form-card__row--cvc-code">
                 <label class="payment-form-card__label" for="cardCvc">cvc</label>
                 <input class="payment-form-card__input" id="cardCvc" name="cardCvc" type="text" maxlength="3" pattern="([0-9]{3})" required>
               </div>
 
               <p class="payment-form-card__description">
-                Три цифры с оборотной стороны
+                Три цифры с&nbsp;оборотной стороны
               </p>
             </div>
           </fieldset>

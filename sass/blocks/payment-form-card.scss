@@ -94,6 +94,16 @@
       color: #d1cfcf;
     }
 
+    &:hover,
+    &:focus {
+      outline: none;
+      border: 1px solid $blue-with-a-hint-of-purple;
+    }
+
+    //&:invalid {
+      //border: 1px solid red;
+    //}
+
     &--card-holder {
       text-transform: uppercase;
     }
@@ -118,9 +128,62 @@
   &__input-exp-date {
     width: 20px;
     border: none;
+    outline: none;
 
     &::-webkit-input-placeholder {
       color: #d1cfcf;
     }
   }
+
+  &__description {
+    width: calc(100% - 108px);
+    @include set-font (12px, $font-normal, #999999);
+  }
+
+
+  @media (min-width: $tablet-width) {
+    width: 391px;
+    padding-left: 24px;
+    padding-right: 24px;
+
+    &--front-side {
+      padding-top: 14px;
+    }
+
+    &--back-side {
+      height: 233px;
+      padding-top: 84px;
+      margin-top: -197px;
+      margin-left: 141px;
+      background-image: linear-gradient(180deg, #e7e6e4 24px, #b49ed6 24px, #b49ed6 74px, #e7e6e4 74px);
+    }
+
+    &__pay-sistem-img {
+      margin-bottom: 23px;
+    }
+
+    &__row {
+      &:not(:first-of-type) {
+        margin-top: 18px;
+      }
+
+      &--two-thirds{
+        width: 220px;
+      }
+
+      &--one-third {
+        width: 108px;
+      }
+    }
+
+    &__label {
+      font-size: 10px;
+      letter-spacing: 1px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+
+    }
+
 }

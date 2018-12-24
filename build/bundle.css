@@ -410,6 +410,7 @@ input[type="radio"].visually-hidden {
       margin-top: 58px;
       margin-right: auto;
       margin-left: auto;
+      padding-top: 30px;
       padding-right: 48px;
       padding-left: 47px; } }
   @media (min-width: 1130px) {
@@ -497,6 +498,9 @@ input[type="radio"].visually-hidden {
     border: 1px solid #cccccc; }
     .payment-form-card__input::-webkit-input-placeholder {
       color: #d1cfcf; }
+    .payment-form-card__input:hover, .payment-form-card__input:focus {
+      outline: none;
+      border: 1px solid #6039aa; }
     .payment-form-card__input--card-holder {
       text-transform: uppercase; }
     .payment-form-card__input--exp-date {
@@ -515,7 +519,37 @@ input[type="radio"].visually-hidden {
         color: #999999; }
   .payment-form-card__input-exp-date {
     width: 20px;
-    border: none; }
+    border: none;
+    outline: none; }
     .payment-form-card__input-exp-date::-webkit-input-placeholder {
       color: #d1cfcf; }
+  .payment-form-card__description {
+    width: calc(100% - 108px);
+    font-size: 12px;
+    font-weight: 400;
+    color: #999999; }
+  @media (min-width: 768px) {
+    .payment-form-card {
+      width: 391px;
+      padding-left: 24px;
+      padding-right: 24px; }
+      .payment-form-card--front-side {
+        padding-top: 14px; }
+      .payment-form-card--back-side {
+        height: 233px;
+        padding-top: 84px;
+        margin-top: -197px;
+        margin-left: 141px;
+        background-image: linear-gradient(180deg, #e7e6e4 24px, #b49ed6 24px, #b49ed6 74px, #e7e6e4 74px); }
+      .payment-form-card__pay-sistem-img {
+        margin-bottom: 23px; }
+      .payment-form-card__row:not(:first-of-type) {
+        margin-top: 18px; }
+      .payment-form-card__row--two-thirds {
+        width: 220px; }
+      .payment-form-card__row--one-third {
+        width: 108px; }
+      .payment-form-card__label {
+        font-size: 10px;
+        letter-spacing: 1px; } }
 
