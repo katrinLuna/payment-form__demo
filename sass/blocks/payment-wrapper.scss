@@ -1,0 +1,28 @@
+.payment-wrapper {
+  min-width: 288px;
+  margin-top: 40px;
+  padding-top: 40px;
+  padding-right: 16px;
+  padding-left: 16px;
+  box-sizing: border-box;
+  background-color: $white;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.06);
+
+  @media (min-width: $tablet-width) {
+    width: 627px;
+    margin-top: 58px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 48px;
+    padding-left: 47px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 627px;
+    flex-basis: 627px;
+    margin-top: 0;
+    margin-right: 0;
+    margin-left: 0;
+  }
+}

@@ -1,0 +1,31 @@
+.payment-form-card {
+  min-width: 256px;
+  box-sizing: border-box;
+  border-radius: 8px;
+  border: 1px solid #e6e6e6;
+  margin-left: 0;
+
+  &--front-side {
+    position: relative;
+    height: 233px;
+    box-shadow: 8px 8px 15px 0 rgba(0, 0, 0, 0.1);
+    background-color: #f1f0f9;
+  }
+
+  &--back-side {
+    margin-top: -157px;
+    height: 256px;
+    background-color: #e7e6f4;
+  }
+
+
+  &__pay-sistem-img {
+    width: 100%;
+    text-align: right;
+  }
+
+  &__pay-sistem-img img {
+    width: 154px;
+    height: 26px;
+  }
+}

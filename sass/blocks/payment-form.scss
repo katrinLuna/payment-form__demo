@@ -1,0 +1,19 @@
+.payment-form {
+  min-width: 256px;
+
+  &__secure-text {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    &__secure-text {
+      display: block;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+
+  }
+
+
+}
