@@ -40,10 +40,14 @@
     display: flex;
     flex-wrap: wrap;
 
-    &--front-side,
-    &--back-side {
+    &--front-side {
       justify-content: space-between;
     }
+
+    &--back-side {
+      justify-content: flex-start;
+    }
+
   }
 
   &__row {
@@ -140,9 +144,10 @@
   }
 
   &__description {
-    width: calc(100% - 108px);
+    width: 100px;
     margin-top: 12px;
     margin-bottom: 12px;
+    margin-left: 20px;
     @include set-font (12px, $font-normal, #999999);
   }
 
@@ -198,6 +203,7 @@
     &__description {
       width: 93px;
       margin-top: 6px;
+      margin-left: 0;
     }
   }
 }

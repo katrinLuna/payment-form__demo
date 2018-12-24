@@ -2,81 +2,47 @@
 /*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
-/**
- * 1. Correct the line height in all browsers.
- * 2. Prevent adjustments of font size after orientation changes in iOS.
- */
 html {
   line-height: 1.15;
   /* 1 */
   -webkit-text-size-adjust: 100%;
   /* 2 */ }
 
-/* Sections
-   ========================================================================== */
-/**
- * Remove the margin in all browsers.
- */
 body {
   margin: 0; }
 
-/**
- * Correct the font size and margin on `h1` elements within `section` and
- * `article` contexts in Chrome, Firefox, and Safari.
- */
 h1 {
   font-size: 2em;
   margin: 0.67em 0; }
 
-/* Grouping content
-   ========================================================================== */
-/**
- * 1. Add the correct box sizing in Firefox.
- * 2. Show the overflow in Edge and IE.
- */
 hr {
-  box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
   /* 1 */
   height: 0;
   /* 1 */
   overflow: visible;
   /* 2 */ }
 
-/**
- * 1. Correct the inheritance and scaling of font size in all browsers.
- * 2. Correct the odd `em` font sizing in all browsers.
- */
 pre {
   font-family: monospace, monospace;
   /* 1 */
   font-size: 1em;
   /* 2 */ }
 
-/* Text-level semantics
-   ========================================================================== */
-/**
- * 1. Remove the bottom border in Chrome 57-
- * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
- */
 abbr[title] {
   border-bottom: none;
   /* 1 */
   text-decoration: underline;
   /* 2 */
-  text-decoration: underline dotted;
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
   /* 2 */ }
 
-/**
- * Add the correct font weight in Chrome, Edge, and Safari.
- */
 b,
 strong {
   font-weight: bolder; }
 
-/**
- * 1. Correct the inheritance and scaling of font size in all browsers.
- * 2. Correct the odd `em` font sizing in all browsers.
- */
 code,
 kbd,
 samp {
@@ -85,16 +51,9 @@ samp {
   font-size: 1em;
   /* 2 */ }
 
-/**
- * Add the correct font size in all browsers.
- */
 small {
   font-size: 80%; }
 
-/**
- * Prevent `sub` and `sup` elements from affecting the line height in
- * all browsers.
- */
 sub,
 sup {
   font-size: 75%;
@@ -108,14 +67,6 @@ sub {
 sup {
   top: -0.5em; }
 
-/* Embedded content
-   ========================================================================== */
-/* Forms
-   ========================================================================== */
-/**
- * 1. Change the font styles in all browsers.
- * 2. Remove the margin in Firefox and Safari.
- */
 button,
 input,
 optgroup,
@@ -130,36 +81,21 @@ textarea {
   margin: 0;
   /* 2 */ }
 
-/**
- * Show the overflow in IE.
- * 1. Show the overflow in Edge.
- */
 button,
 input {
   /* 1 */
   overflow: visible; }
 
-/**
- * Remove the inheritance of text transform in Edge, Firefox, and IE.
- * 1. Remove the inheritance of text transform in Firefox.
- */
 button,
 select {
-  /* 1 */
   text-transform: none; }
 
-/**
- * Correct the inability to style clickable types in iOS and Safari.
- */
 button,
 [type="button"],
 [type="reset"],
 [type="submit"] {
   -webkit-appearance: button; }
 
-/**
- * Remove the inner border and padding in Firefox.
- */
 button::-moz-focus-inner,
 [type="button"]::-moz-focus-inner,
 [type="reset"]::-moz-focus-inner,
@@ -167,29 +103,18 @@ button::-moz-focus-inner,
   border-style: none;
   padding: 0; }
 
-/**
- * Restore the focus styles unset by the previous rule.
- */
 button:-moz-focusring,
 [type="button"]:-moz-focusring,
 [type="reset"]:-moz-focusring,
 [type="submit"]:-moz-focusring {
   outline: 1px dotted ButtonText; }
 
-/**
- * Correct the padding in Firefox.
- */
 fieldset {
   padding: 0.35em 0.75em 0.625em; }
 
-/**
- * 1. Correct the text wrapping in Edge and IE.
- * 2. Correct the color inheritance from `fieldset` elements in IE.
- * 3. Remove the padding so developers are not caught out when they zero out
- *    `fieldset` elements in all browsers.
- */
 legend {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   /* 1 */
   color: inherit;
   /* 2 */
@@ -202,56 +127,31 @@ legend {
   white-space: normal;
   /* 1 */ }
 
-/**
- * Add the correct vertical alignment in Chrome, Firefox, and Opera.
- */
 progress {
   vertical-align: baseline; }
 
-/**
- * Correct the cursor style of increment and decrement buttons in Chrome.
- */
 [type="number"]::-webkit-inner-spin-button,
 [type="number"]::-webkit-outer-spin-button {
   height: auto; }
 
-/**
- * 1. Correct the odd appearance in Chrome and Safari.
- * 2. Correct the outline style in Safari.
- */
 [type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
   outline-offset: -2px;
   /* 2 */ }
 
-/**
- * Remove the inner padding in Chrome and Safari on macOS.
- */
 [type="search"]::-webkit-search-decoration {
   -webkit-appearance: none; }
 
-/**
- * 1. Correct the inability to style clickable types in iOS and Safari.
- * 2. Change font properties to `inherit` in Safari.
- */
 ::-webkit-file-upload-button {
   -webkit-appearance: button;
   /* 1 */
   font: inherit;
   /* 2 */ }
 
-/* Interactive
-   ========================================================================== */
-/*
- * Add the correct display in Edge, IE 10+, and Firefox.
- */
 details {
   display: block; }
 
-/*
- * Add the correct display in all browsers.
- */
 summary {
   display: list-item; }
 
@@ -291,7 +191,8 @@ input[type="radio"].visually-hidden {
   border: 0;
   padding: 0;
   white-space: nowrap;
-  clip-path: inset(100%);
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden; }
 
@@ -299,7 +200,8 @@ input[type="radio"].visually-hidden {
   width: 100%;
   min-height: 100vh;
   padding-bottom: 80px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   background-attachment: fixed;
   background-color: #3abbba;
   background-position: 0 0;
@@ -317,7 +219,8 @@ input[type="radio"].visually-hidden {
   padding-top: 16px;
   padding-left: 16px;
   padding-right: 16px;
-  box-sizing: border-box; }
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
   .page-header__logo-link {
     display: block;
     height: 30px; }
@@ -341,7 +244,8 @@ input[type="radio"].visually-hidden {
   margin-top: 30px;
   padding-left: 16px;
   padding-right: 16px;
-  box-sizing: border-box; }
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
   @media (min-width: 768px) {
     .main-wrapper {
       min-width: 768px;
@@ -353,9 +257,14 @@ input[type="radio"].visually-hidden {
       padding-right: 24px; } }
   @media (min-width: 1130px) {
     .main-wrapper {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      justify-content: space-between;
-      flex-wrap: nowrap;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
       width: 1130px;
       margin-top: 76px;
       padding-left: 15px;
@@ -391,7 +300,8 @@ input[type="radio"].visually-hidden {
         font-size: 21px; } }
   @media (min-width: 1130px) {
     .payment-slogan {
-      flex-basis: 438px;
+      -ms-flex-preferred-size: 438px;
+          flex-basis: 438px;
       width: 438px;
       padding-top: 29px; }
       .payment-slogan__header {
@@ -409,10 +319,12 @@ input[type="radio"].visually-hidden {
   padding-right: 16px;
   padding-left: 16px;
   padding-bottom: 30px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   background-color: #ffffff;
   border-radius: 4px;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.06); }
+  -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.06);
+          box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.06); }
   @media (min-width: 768px) {
     .payment-wrapper {
       width: 627px;
@@ -425,7 +337,8 @@ input[type="radio"].visually-hidden {
   @media (min-width: 1130px) {
     .payment-wrapper {
       min-width: 627px;
-      flex-basis: 627px;
+      -ms-flex-preferred-size: 627px;
+          flex-basis: 627px;
       margin-top: 0;
       margin-right: 0;
       margin-left: 0; } }
@@ -461,6 +374,8 @@ input[type="radio"].visually-hidden {
     white-space: nowrap; }
     .payment-form__submit-button:hover, .payment-form__submit-button:focus {
       outline: none;
+      -webkit-transition: background-color 0.5s;
+      transition: background-color 0.5s;
       background-color: #32d6bd; }
     .payment-form__submit-button:active {
       background-color: #21a08c; }
@@ -480,8 +395,12 @@ input[type="radio"].visually-hidden {
       color: #7946d9; }
   @media (min-width: 768px) {
     .payment-form__submit-button-wrapper {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      justify-content: space-between;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
       text-align: left; }
     .payment-form__secure-text {
       display: block;
@@ -512,7 +431,8 @@ input[type="radio"].visually-hidden {
   margin-left: 0;
   padding-left: 16px;
   padding-right: 16px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   border-radius: 8px;
   border: 1px solid #e6e6e6; }
   .payment-form-card--front-side {
@@ -520,7 +440,8 @@ input[type="radio"].visually-hidden {
     height: 233px;
     padding-top: 14px;
     padding-bottom: 30px;
-    box-shadow: 8px 8px 15px 0 rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 8px 8px 15px 0 rgba(0, 0, 0, 0.1);
+            box-shadow: 8px 8px 15px 0 rgba(0, 0, 0, 0.1);
     background-color: #f1f0f9; }
   .payment-form-card--back-side {
     height: 256px;
@@ -536,10 +457,19 @@ input[type="radio"].visually-hidden {
     width: 154px;
     height: 26px; }
   .payment-form-card__fields-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap; }
-    .payment-form-card__fields-wrapper--front-side, .payment-form-card__fields-wrapper--back-side {
-      justify-content: space-between; }
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    .payment-form-card__fields-wrapper--front-side {
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+    .payment-form-card__fields-wrapper--back-side {
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start; }
   .payment-form-card__row:not(:first-of-type) {
     margin-top: 21px; }
   .payment-form-card__row--full-width {
@@ -568,7 +498,8 @@ input[type="radio"].visually-hidden {
     padding-right: 12px;
     padding-bottom: 11px;
     padding-left: 12px;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     font-size: 14px;
     font-weight: 400;
     color: #333333;
@@ -583,12 +514,17 @@ input[type="radio"].visually-hidden {
     .payment-form-card__input--card-holder {
       text-transform: uppercase; }
     .payment-form-card__input--exp-date {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      justify-content: space-between;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
       position: relative; }
       .payment-form-card__input--exp-date::before {
         content: "/";
-        transform: translate(50%);
+        -webkit-transform: translate(50%);
+                transform: translate(50%);
         position: absolute;
         left: 44%;
         width: 6px;
@@ -603,9 +539,10 @@ input[type="radio"].visually-hidden {
     .payment-form-card__input-exp-date::-webkit-input-placeholder {
       color: #d1cfcf; }
   .payment-form-card__description {
-    width: calc(100% - 108px);
+    width: 100px;
     margin-top: 12px;
     margin-bottom: 12px;
+    margin-left: 20px;
     font-size: 12px;
     font-weight: 400;
     color: #999999; }
@@ -633,11 +570,15 @@ input[type="radio"].visually-hidden {
       .payment-form-card__fields-wrapper--back-side {
         float: right;
         width: 93px;
-        flex-direction: column; }
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column; }
       .payment-form-card__label {
         font-size: 10px;
         letter-spacing: 1px; }
       .payment-form-card__description {
         width: 93px;
-        margin-top: 6px; } }
+        margin-top: 6px;
+        margin-left: 0; } }
 
