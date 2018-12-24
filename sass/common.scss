@@ -18,6 +18,13 @@ button {
   cursor: pointer;
 }
 
+button,
+input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+   appearance: none;
+}
+
 .no-mobile {
   display: none;
 }

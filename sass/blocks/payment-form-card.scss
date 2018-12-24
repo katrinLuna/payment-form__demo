@@ -39,7 +39,11 @@
   &__fields-wrapper {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+
+    &--front-side,
+    &--back-side {
+      justify-content: space-between;
+    }
   }
 
   &__row {
@@ -137,6 +141,8 @@
 
   &__description {
     width: calc(100% - 108px);
+    margin-top: 12px;
+    margin-bottom: 12px;
     @include set-font (12px, $font-normal, #999999);
   }
 
@@ -176,14 +182,22 @@
       }
     }
 
+    &__fields-wrapper {
+      &--back-side {
+        float: right;
+        width: 93px;
+        flex-direction: column;
+      }
+    }
+
     &__label {
       font-size: 10px;
       letter-spacing: 1px;
     }
-  }
 
-  @media (min-width: $desktop-width) {
-
+    &__description {
+      width: 93px;
+      margin-top: 6px;
     }
-
+  }
 }

@@ -5,11 +5,101 @@
     display: none;
   }
 
-  @media (min-width: $tablet-width) {
-    &__secure-text {
-      display: block;
+  &__submit-button-wrapper {
+    width: 100%;
+    text-align: center;
+  }
+
+  &__submit-button {
+    width: 256px;
+    height: 56px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    padding-left: 65px;
+    padding-right: 20px;
+    @include set-font (16px, $font-semi-bold, $white);
+    text-transform: uppercase;
+    border-radius: 50px;
+    background-color: $blue-with-a-hint-of-purple;
+    background-image: url('img/lock--white.svg');
+    background-repeat: no-repeat;
+    background-size: 16px 21px;
+    background-position: 40px 17px;
+    border: none;
+    white-space: nowrap;
+
+    &:hover,
+    &:focus {
+      outline: none;
+      background-color: $tealish;
+    }
+
+    &:active {
+      background-color: #21a08c;
     }
   }
+
+  &__pay-option {
+    width: 100%;
+    text-align: center;
+    margin-top: 21px;
+  }
+
+  &__pay-option a {
+    text-decoration: none;
+    @include set-font (14px, $font-normal, #26aded);
+
+    &:hover,
+    &:focus {
+      outline: none;
+      color: $blue-with-a-hint-of-purple;
+    }
+
+    &:active {
+      color: #7946d9;
+    }
+  }
+
+
+
+  @media (min-width: $tablet-width) {
+    &__submit-button-wrapper {
+      display: flex;
+      justify-content: space-between;
+      text-align: left;
+    }
+
+    &__secure-text {
+      display: block;
+      width: 263px;
+      margin-top: 30px;
+      padding-left: 44px;
+      @include set-font (12px, $font-normal, #999999);
+      background-image: url('img/lock--grey.svg');
+      background-repeat: no-repeat;
+      background-size: 20px 26px;
+      background-position: 0 10px;
+    }
+
+    &__submit-button {
+      width: 207px;
+      margin-left: 0;
+      margin-right: 0;
+      padding-left: 20px;
+      text-align: center;
+      background-image: none;
+    }
+
+    &__pay-option {
+      width: 100%;
+      text-align: left;
+      margin-top: 25px;
+    }
+  }
+
 
   @media (min-width: $desktop-width) {
 
