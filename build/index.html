@@ -30,35 +30,45 @@
       <section class="payment-wrapper">
         <h2 class="page-title visually-hidden">Форма оплаты 3-х дневного доступа тренажеров для мозга от Викиум</h2>
 
-        <form class="payment-form" action="https://wikium.server" method="post">
+        <form class="payment-form" action="https://wikium.server" method="post" onsubmit="return false;">
 
           <fieldset class="payment-form-card payment-form-card--front-side">
             <div class="payment-form-card__pay-sistem-img">
               <img src="img/cards.png" alt="Виды платежных систем доступных для оплаты: MasterCard, МИР, Visa" title="Виды платежных систем доступных для оплаты: MasterCard, МИР, Visa" width="154" height="26">
             </div>
 
-            <div class="payment-form-card__row">
-              <label class="payment-form-card__label" for="cardNumber">номер карты</label>
-              <input class="payment-form-card__input" id="cardNumber" name="cardNumber" type="number" placeholder="" required>
-            </div>
-            <div class="payment-form-card__row">
-              <label class="payment-form-card__label" for="cardHolder">имя владельца</label>
-              <input class="payment-form-card__input" id="cardHolder" name="cardHolder" type="text" pattern="^[a-zA-Z]+${2}" placeholder="" required>
-            </div>
-            <div class="payment-form-card__row">
-              <label class="payment-form-card__label" for="cardPeriod">срок действия</label>
-              <input class="payment-form-card__input" id="cardPeriod" name="cardPeriod" type="date" placeholder="" required>
+            <div class="payment-form-card__fields-wrapper">
+              <div class="payment-form-card__row payment-form-card__row--full-width">
+                <label class="payment-form-card__label" for="cardNumber">номер карты</label>
+                <input class="payment-form-card__input" id="cardNumber" name="cardNumber" type="text" placeholder="1234 5678 9012 3456789" maxlength="22" required>
+              </div>
+
+              <div class="payment-form-card__row payment-form-card__row--two-thirds">
+                <label class="payment-form-card__label" for="cardHolder">имя владельца</label>
+                <input class="payment-form-card__input payment-form-card__input--card-holder" id="cardHolder" name="cardHolder" type="text" pattern="^[a-zA-Z]+${2}" placeholder="IVAN IVANOV" required>
+              </div>
+
+              <div class="payment-form-card__row payment-form-card__row--one-third">
+                <label class="payment-form-card__label" for="expMonth">срок действия</label>
+                <div class="payment-form-card__input payment-form-card__input--exp-date">
+                  <input class="payment-form-card__input-exp-date" id="expMonth" name="expMonth" type="text" placeholder="12" required autocomplete="off" autocorrect="off">
+                  <input class="payment-form-card__input-exp-date" id="expYear" name="expYear" type="text" placeholder="18" required autocomplete="off" autocorrect="off">
+                </div>
+              </div>
             </div>
           </fieldset>
 
           <fieldset class="payment-form-card payment-form-card--back-side">
-            <div class="payment-form-card__row">
-              <label class="payment-form-card__label" for="cardCvc">cvc</label>
-              <input class="payment-form-card__input" id="cardCvc" name="cardCvc" type="text" maxlength="3" pattern="([0-9]{3})" placeholder="" required>
+            <div class="payment-form-card__fields-wrapper">
+              <div class="payment-form-card__row payment-form-card__row--cvc-code">
+                <label class="payment-form-card__label" for="cardCvc">cvc</label>
+                <input class="payment-form-card__input" id="cardCvc" name="cardCvc" type="text" maxlength="3" pattern="([0-9]{3})" required>
+              </div>
+
+              <p class="payment-form-card__description">
+                Три цифры с оборотной стороны
+              </p>
             </div>
-            <p class="payment-form-card__description">
-              Три цифры с оборотной стороны
-            </p>
           </fieldset>
 
           <div class="payment-form__secure">
